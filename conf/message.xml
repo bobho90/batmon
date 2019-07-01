@@ -1,5 +1,5 @@
 <applications>
-	<application name="Food-Beverages-Dev">
+	<application name="Sample Application">
            <timeout>15</timeout>
 		<severity>
 			<info>

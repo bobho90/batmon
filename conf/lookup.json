@@ -2,7 +2,7 @@
 	{
 		"rest": [
 			{
-				"url": "json/ScheduledTasks-20180307.json"
+				"url": "https://<HOSTNAME>/<VERSION>/itmonitoring/{appName}/app-logs?tier={tierName}&&processName={processName}"
 			}
 		]
 	}
