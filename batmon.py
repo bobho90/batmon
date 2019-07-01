@@ -423,7 +423,6 @@ for rest in json.loads(lookupURL):
 					# tiername = "TierTest"
 					# processname = "Process"
 				# else:
-				#url = "https://qa-api.amtrak.com/v1/itmonitoring/PTC-STAGE/app-logs?tier=Batch&&processName=ActiveTrains"
 				path = urlparse(url).path
 				query = urlparse(url).query
 				query_list = dict(parse_qsl(query))
