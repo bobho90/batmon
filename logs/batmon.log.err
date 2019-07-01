@@ -1,0 +1,13 @@
+2019-01-30 14:24:27,589:INFO:Getting list of Applications
+2019-01-30 14:24:27,589:DEBUG:URL: https://amtrak.saas.appdynamics.com/controller/rest/applications?output=json
+2019-01-30 14:24:27,589:DEBUG:Headers: {'Authorization': 'Basic YWRtaW4udmVuZG9yQGFtdHJhazpDMDBrMTMkVQ=='}
+2019-01-30 14:24:27,589:INFO:Application Found
+2019-01-30 14:24:27,589:DEBUG:AppID: 306
+2019-01-30 14:24:27,729:ERROR:Error: None
+2019-01-30 14:24:27,745:DEBUG:Error connecting to url.
+2019-01-30 14:24:30,026:INFO:Application Found
+2019-01-30 14:24:30,026:DEBUG:AppID: 306
+2019-01-30 14:24:30,276:ERROR:Error: None
+2019-01-30 14:24:30,276:DEBUG:Error connecting to url.
+2019-01-30 14:24:30,276:INFO:Printing values to be posted into AppDynamics
+2019-01-30 14:24:30,276:INFO:--- Job Completed ---

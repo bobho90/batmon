@@ -1,0 +1,16 @@
+<applications>
+	<application name="Food-Beverages-Dev">
+           <timeout>15</timeout>
+		<severity>
+			<info>
+			</info>
+			<warning>
+				<message>WarningDisabled</message>
+				<message>WarningNeverRun</message>
+			</warning>
+			<critical>
+				<message>Failure</message>
+			</critical>
+		</severity>
+	</application>
+</applications>

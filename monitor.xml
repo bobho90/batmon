@@ -1,0 +1,22 @@
+<monitor>
+    <name>Batch Monitoring</name>
+    <type>managed</type>
+    <description>Batmon</description>
+    <monitor-configuration>
+    </monitor-configuration>
+    <monitor-run-task>
+		<execution-style>periodic</execution-style>
+		<execution-frequency-in-seconds>30</execution-frequency-in-seconds>
+		<execution-timeout-in-secs>30</execution-timeout-in-secs>
+        <name>Batch Monitoring</name>
+        <type>executable</type>
+        <task-arguments>
+        	<argument name="file" is-required="true" default-value="batmon.py"></argument>
+        </task-arguments>
+        <executable-task>
+            <type>command</type>
+            <command>python</command>
+        </executable-task>
+    </monitor-run-task>
+</monitor>
+
