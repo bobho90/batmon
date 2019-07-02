@@ -101,7 +101,7 @@ Provide the details below for the REST entrypoints:
 ```
 
 Note: in the REST entrypoint, they should provide the link in the following format:  
-https://<HOSTNAME>/<VERSION>/itmonitoring/{appName}/app-logs?tier={tierName}&&processName={processName}
+https://\<HOSTNAME\>/\<VERSION\>/itmonitoring/{appName}/app-logs?tier={tierName}&&processName={processName}
 
 - appName - Application Name
 - tierName - Tier Name
