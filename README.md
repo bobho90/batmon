@@ -1,10 +1,10 @@
-#Prerequisites
+# Prerequisites
 
 Python 3.x
 AppDynamics Machine Agent Installed
 AppdEvents store created in Analytics
 
-#Creation of AppdEvents Store
+# Creation of AppdEvents Store
 
 curl -X POST \
 <REPLACE_WITH_CONTROLLERURL>/events/schema/AppdEvents \
@@ -33,16 +33,16 @@ curl -X POST \
    }
 }'
 
-#Installation
+# Installation
 
 Extract zip and configure the extension
 Move the batmon folder to the following directory: /path/to/machine-agent/monitors/
 Restart the machine agent
 
-#Configuration
+# Configuration
 
 Modify lookup.xml to add in the REST URLs
 
-#Optional Files
+# Optional Files
 
 The json folder is optional, and can be removed.  It consists of sample jsons, for testing purposes.
