@@ -4,6 +4,12 @@
 - AppDynamics Machine Agent Installed
 - AppdEvents store created in Analytics
 
+# File Structure
+
+	.
+	|--- Test
+	|___ Test
+
 # Creation of AppdEvents Store
 
 Run the following to create the AppdEvents Store in AppDynamics.
