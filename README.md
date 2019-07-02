@@ -29,7 +29,7 @@ Run the following to create the AppdEvents Store in AppDynamics.
 curl -X POST \
 <REPLACE_WITH_CONTROLLER_URL>/events/schema/AppdEvents \
 -H 'X-Events-API-AccountName: <REPLACE_WITH_ACCOUNT_NAME>' \
--H 'X-Events-API-Key: <REPLACE_WITH_APIKEY>' \
+-H 'X-Events-API-Key: <REPLACE_WITH_API_KEY>' \
 -H 'Content-Type: application/vnd.appd.events+json;v=2' \
 -H 'Accept: application/vnd.appd.events+json;v=2' \
 -d '{ 
