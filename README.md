@@ -61,7 +61,74 @@ Restart the machine agent
 
 # Configuration
 
-Modify lookup.xml to add in the REST URLs
+Modify the files below:
+
+## ./conf/config.ini
+
+Provide the details below:
+
+```
+- globalAccountName = <REPLACE_WITH_GLOBAL_ACCOUNT_NAME>
+- apiKey = <REPLACE_WITH_GLOBAL_APIKEY>
+- controllerAccount = <REPLACE_WITH_CONTROLLER_ACCOUNT_NAME>
+- authorization = <REPLACE_WITH_AUTHORIZATION_IN_BASE64>
+- applicationName = <REPLACE_WITH_DEFAULT_APPLICATION_NAME>
+- controllerURL = <REPLACE_WITH_CONTROLLER_URL>
+- eventServiceURL = <REPLACE_WITH_EVENTS_SERVICE_URL>
+```
+
+Note: to generate the authorization in base64, you can use the link below:
+https://www.base64encode.org/
+
+Example: user@account:password --> base64: dXNlckBhY2NvdW50OnBhc3N3b3Jk
+
+## ./conf/lookup.json
+
+Provide the details below for the REST entrypoints:
+
+```
+[
+ {
+   "rest": [
+    {
+     "url": "https://<HOSTNAME>/<VERSION>/itmonitoring/{appName}/app-logs?tier={tierName}&&processName={processName}"
+	},
+	{
+     "url": "https://<HOSTNAME>/<VERSION>/itmonitoring/{appName}/app-logs?tier={tierName}&&processName={processName}"
+	}]
+ }
+]
+```
+
+Note: in the REST entrypoint, they should provide the link in the following format:
+https://<HOSTNAME>/<VERSION>/itmonitoring/{appName}/app-logs?tier={tierName}&&processName={processName}
+
+- appName - Application Name
+- tierName - Tier Name
+- processName - Process Name
+
+## ./conf/message.xml
+
+Provide the details below for mapping of message severities:
+
+```
+<applications>
+	<application name="{appName}">
+           <timeout>{timeout}</timeout>
+		<severity>
+			<info>
+				<message></message>
+			</info>
+			<warning>
+				<message></message>
+			</warning>
+			<critical>
+				<message></message>
+			</critical>
+		</severity>
+	</application>
+</applications>
+```
 
 # Optional Files
 
