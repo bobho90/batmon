@@ -55,9 +55,9 @@ curl -X POST \
 ```
 # Installation
 
-Extract zip and configure the extension
-Move the batmon folder to the following directory: /path/to/machine-agent/monitors/
-Restart the machine agent
+- Extract zip and configure the extension
+- Move the batmon folder to the following directory: /path/to/machine-agent/monitors/
+- Restart the machine agent
 
 # Configuration
 
@@ -77,7 +77,7 @@ Provide the details below:
 - eventServiceURL = <REPLACE_WITH_EVENTS_SERVICE_URL>
 ```
 
-Note: to generate the authorization in base64, you can use the link below:
+Note: To generate the authorization in base64, you can use the link below:  
 https://www.base64encode.org/
 
 Example: user@account:password --> base64: dXNlckBhY2NvdW50OnBhc3N3b3Jk
@@ -100,7 +100,7 @@ Provide the details below for the REST entrypoints:
 ]
 ```
 
-Note: in the REST entrypoint, they should provide the link in the following format:
+Note: in the REST entrypoint, they should provide the link in the following format:  
 https://<HOSTNAME>/<VERSION>/itmonitoring/{appName}/app-logs?tier={tierName}&&processName={processName}
 
 - appName - Application Name
@@ -129,6 +129,18 @@ Provide the details below for mapping of message severities:
 	</application>
 </applications>
 ```
+Note: Timeout is in minutes.  If you don't want any timeouts, please put in 0.
+
+# Logging
+
+Below are the defaults:
+
+Log Location : ./logs/batmon.log
+Log Rotation Count: 5
+Max Size: 10 MB
+Log Level : DEBUG
+
+You can modify the log configurations in ./conf/logging.ini
 
 # Optional Files
 
