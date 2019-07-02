@@ -6,9 +6,20 @@
 
 # File Structure
 
-	.
-	|--- Test
-	|___ Test
+ 	.
+    ├── conf                    
+    │   ├── config.ini				# Configuration with AppDynamics endpoints and authorizations
+    │   ├── logging.ini				# Logging Configuration
+    │   ├── lookup.json				# List of URLs of REST Endpoints
+    │   └── message.xml				# Mapping of message and severities
+	├── json
+    │   └── sample.json				# Sample JSON of expected REST Call
+    ├── logs
+	│	└── batmon.log				# Generated logs (location can be changed in the logging.ini)
+    ├── README.md					# Readme file
+    ├── batmon.py					# Python script to for Batmon
+    └── monitor.xml					# AppDynamics configuration file of extension
+    
 
 # Creation of AppdEvents Store
 
