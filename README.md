@@ -1,11 +1,14 @@
 # Prerequisites
 
-Python 3.x
-AppDynamics Machine Agent Installed
-AppdEvents store created in Analytics
+- Python 3.x
+- AppDynamics Machine Agent Installed
+- AppdEvents store created in Analytics
 
 # Creation of AppdEvents Store
 
+Run the following to create the AppdEvents Store in AppDynamics.
+
+```
 curl -X POST \
 <REPLACE_WITH_CONTROLLERURL>/events/schema/AppdEvents \
 -H 'X-Events-API-AccountName: <REPLACE_WITH_ACCOUNTNAME>' \
@@ -32,7 +35,7 @@ curl -X POST \
 		"deepLink": "string",
    }
 }'
-
+```
 # Installation
 
 Extract zip and configure the extension
