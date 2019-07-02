@@ -1,15 +1,15 @@
 <applications>
-	<application name="Sample Application">
-           <timeout>15</timeout>
+	<application name="">
+           <timeout>0</timeout>
 		<severity>
 			<info>
 			</info>
 			<warning>
-				<message>WarningDisabled</message>
-				<message>WarningNeverRun</message>
+				<message></message>
+				<message></message>
 			</warning>
 			<critical>
-				<message>Failure</message>
+				<message></message>
 			</critical>
 		</severity>
 	</application>
