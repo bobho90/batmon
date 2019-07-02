@@ -135,10 +135,10 @@ Note: Timeout is in minutes.  If you don't want any timeouts, please put in 0.
 
 Below are the defaults:
 
-Log Location : ./logs/batmon.log
-Log Rotation Count: 5
-Max Size: 10 MB
-Log Level : DEBUG
+- Log Location : ./logs/batmon.log
+- Log Rotation Count: 5
+- Max Size: 10MB
+- Log Level : DEBUG
 
 You can modify the log configurations in ./conf/logging.ini
 
