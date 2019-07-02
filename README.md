@@ -19,7 +19,7 @@
     ├── README.md					# Readme file
     ├── batmon.py					# Python script to for Batmon
     ├── monitor.xml					# AppDynamics configuration file of extension
-    └── AppD-Extension-Batmon-Alerts.docx					# Guide to create Alerts in AppDynamics from extension data
+    └── AppD-Extension-Batmon-Alerts.docx		# Guide to create Alerts in AppDynamics from extension data
 
     
 
